@@ -17,22 +17,22 @@
   expected-result: |
     Пользователь перенаправлен на главную страницу Codebattle с отображением профиля
 
-- summary: |
-    Проверка авторизации через GitHub с неверными данными
-  requirement: |
-    При вводе неверных данных GitHub пользователь должен получить сообщение об ошибке
-  prerequisites: |
-    Открыта главная страница https://codebattle.hexlet.io/
-  test-data: |
-    GitHub логин = hexlet@user.com  
-    GitHub пароль = wrongpassword
-  steps:
-    - Нажать кнопку "Sign in with GitHub"
-    - Ввести неверный GitHub логин
-    - Ввести неверный GitHub пароль
-    - Нажать кнопку "Authorize" на странице GitHub
-  expected-result: |
-    Пользователь получает сообщение об ошибке от GitHub, например, "Incorrect username or password"
+summary: |
+  Невозможность авторизации через GitHub с неверными данными
+requirement: |
+  При вводе неверных данных GitHub пользователь должен получить сообщение об ошибке
+prerequisites: |
+  Открыта главная страница https://codebattle.hexlet.io
+test-data: |
+  GitHub логин = hexlet@user.com  
+  GitHub пароль = wrongpassword
+steps:
+  - Нажать кнопку "Sign in with GitHub"
+  - Ввести неверный GitHub логин
+  - Ввести неверный GitHub пароль
+  - Нажать кнопку "Authorize" на странице GitHub
+expected-result: |
+  Пользователь получает сообщение об ошибке от GitHub, например, "Incorrect username or password"
 
 - summary: |
     Проверка начала одиночной игры против бота
